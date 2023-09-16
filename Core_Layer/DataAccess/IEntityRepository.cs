@@ -16,5 +16,4 @@ namespace Core_Layer.DataAccess
         void Update(T entity);
         void Delete(T entity);
     }
-   
 }

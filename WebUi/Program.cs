@@ -1,7 +1,18 @@
+using Business.Abstract;
+using Business.Concrete;
+using DataAccess_Layer.Abstract;
+using DataAccess_Layer.Concrete.EntityFramework;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddMvc();
+
+
+builder.Services.AddScoped<IProductService , ProductManager>();
+builder.Services.AddScoped<IProductDataAccessLayer , EfProductDataAccessLayer>();
+
 
 var app = builder.Build();
 
@@ -13,15 +24,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
+    pattern: "{controller=Product}/{action=Index}/{id?}");
 app.Run();

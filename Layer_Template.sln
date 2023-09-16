@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core_Layer", "Core_Layer\Core_Layer.csproj", "{422BA935-5796-4A06-A1A8-8664DBC218B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core_Layer\Core.csproj", "{422BA935-5796-4A06-A1A8-8664DBC218B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{18B70F15-9BCF-4228-9E8A-4CF3BD53F383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess_Layer", "DataAccess\DataAccess_Layer.csproj", "{BCDBC779-07C2-46EF-8BBB-3B8EBE997C46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{BCDBC779-07C2-46EF-8BBB-3B8EBE997C46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business_Layer", "Business\Business_Layer.csproj", "{57049B5D-3C0E-4006-875D-99745572647D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{57049B5D-3C0E-4006-875D-99745572647D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUi", "WebUi\WebUi.csproj", "{1EDD30BC-05D9-42AA-937E-4960A3E7FB69}"
 EndProject
