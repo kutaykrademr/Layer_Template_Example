@@ -8,6 +8,7 @@ namespace Core_Layer.Entities
 {
     public class IEntity
     {
-
+        public int Id { get; set; }
     }
 }
+

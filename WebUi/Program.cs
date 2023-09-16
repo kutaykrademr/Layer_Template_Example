@@ -2,6 +2,7 @@ using Business.Abstract;
 using Business.Concrete;
 using DataAccess_Layer.Abstract;
 using DataAccess_Layer.Concrete.EntityFramework;
+using WebUi;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,9 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 
-
-builder.Services.AddScoped<IProductService , ProductManager>();
-builder.Services.AddScoped<IProductDataAccessLayer , EfProductDataAccessLayer>();
+//Dependency Injection
+ServiceConfigurator.Configure(builder.Services);
 
 
 var app = builder.Build();

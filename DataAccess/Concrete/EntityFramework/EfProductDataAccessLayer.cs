@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess_Layer.Concrete.EntityFramework
 {
-    public class EfProductDataAccessLayer:EfEntityRepositoryBase<Product,NorthwindContext> , IProductDataAccessLayer
+    public class EfProductDataAccessLayer:EfEntityRepositoryBase<Product,MssqlContext> , IProductDataAccessLayer
     {
     }
 }
